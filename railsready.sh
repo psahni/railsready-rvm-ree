@@ -11,8 +11,8 @@
 shopt -s nocaseglob
 set -e
 
-ruby_version="1.9.2"
-ruby_version_string="1.9.2p180"
+ruby_version="ree-1.8.7"
+ruby_version_string="ree-1.8.7"
 ruby_source_url="ftp://ftp.ruby-lang.org//pub/ruby/1.9/ruby-1.9.2-p180.tar.gz"
 ruby_source_tar_name="ruby-1.9.2-p180.tar.gz"
 ruby_source_dir_name="ruby-1.9.2-p180"
@@ -72,11 +72,12 @@ sudo -v >/dev/null 2>&1 || { echo $script_runner has no sudo privileges ; exit 1
 
 # Ask if you want to build Ruby or install RVM
 echo -e "\n"
-echo "Build Ruby or install RVM?"
-echo "=> 1. Build from souce"
-echo "=> 2. Install RVM"
-echo -n "Select your Ruby type [1 or 2]? "
-read whichRuby
+#echo "Build Ruby or install RVM?"
+#echo "=> 1. Build from souce"
+#echo "=> 2. Install RVM"
+#echo -n "Select your Ruby type [1 or 2]? "
+#read whichRuby
+whichRuby = 2
 
 if [ $whichRuby -eq 1 ] ; then
   echo -e "\n\n!!! Set to build Ruby from source and install system wide !!! \n"
