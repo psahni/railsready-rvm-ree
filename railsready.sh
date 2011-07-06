@@ -8,6 +8,15 @@
 # Contributions from: Wayne E. Seguin <wayneeseguin@gmail.com>
 # Contributions from: Ryan McGeary <ryan@mcgeary.org>
 #
+# ATTENTION:
+# This script has been modified from its original form.
+# Please do not contact Josh, Wayne, or Ryan with any 
+# issues you have with it until you've tried the official
+# version.
+#
+# Thanks,
+# Phillip Ridlen <p@rdln.net>
+
 shopt -s nocaseglob
 set -e
 
@@ -65,7 +74,7 @@ echo " * Bundler, Passenger, and Rails gems"
 echo " * Git"
 
 echo -e "\nThis script is always changing."
-echo "Make sure you got it from https://github.com/joshfng/railsready"
+echo "Make sure you got it from https://github.com/philtr/railsready"
 
 # Check if the user has sudo privileges.
 sudo -v >/dev/null 2>&1 || { echo $script_runner has no sudo privileges ; exit 1; }
@@ -173,5 +182,3 @@ echo    "### Installation is complete! ###"
 echo -e "#################################\n"
 
 echo -e "\n !!! logout and back in to access Ruby or run source ~/.bash_profile !!!\n"
-
-echo -e "\n Thanks!\n-Josh\n"
