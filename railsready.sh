@@ -86,7 +86,7 @@ echo -e "\n"
 #echo "=> 2. Install RVM"
 #echo -n "Select your Ruby type [1 or 2]? "
 #read whichRuby
-whichRuby = 2
+whichRuby=2
 
 if [ $whichRuby -eq 1 ] ; then
   echo -e "\n\n!!! Set to build Ruby from source and install system wide !!! \n"
